@@ -3,6 +3,8 @@ require 'sorbet-runtime'
 class Go
   extend ::T::Sig
 
+  # you can make the test pass by using the following:
+  # T::Sig::WithoutRuntime.sig do void end
   sig do
     void
   end
